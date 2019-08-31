@@ -11,15 +11,19 @@
 		AC32904F231B01B200C33214 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC32904D231B01B200C33214 /* Main.storyboard */; };
 		AC329051231B01B300C33214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC329050231B01B300C33214 /* Assets.xcassets */; };
 		AC329054231B01B300C33214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC329052231B01B300C33214 /* LaunchScreen.storyboard */; };
+		C2D3B67E5DA82B5AE165A3C3 /* Pods_Fantasy_Companion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25302B2FD47809FAEFBE2668 /* Pods_Fantasy_Companion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25302B2FD47809FAEFBE2668 /* Pods_Fantasy_Companion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fantasy_Companion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F3050DF9A1F3634DD43858A /* Pods-Fantasy-Companion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fantasy-Companion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fantasy-Companion/Pods-Fantasy-Companion.debug.xcconfig"; sourceTree = "<group>"; };
 		AC329046231B01B200C33214 /* Fantasy-Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fantasy-Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC329049231B01B200C33214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC32904E231B01B200C33214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC329050231B01B300C33214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC329053231B01B300C33214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC329055231B01B300C33214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4C2CF4B294A9FBA20F25264 /* Pods-Fantasy-Companion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fantasy-Companion.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fantasy-Companion/Pods-Fantasy-Companion.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D3B67E5DA82B5AE165A3C3 /* Pods_Fantasy_Companion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31288E7C6565044544820BA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F3050DF9A1F3634DD43858A /* Pods-Fantasy-Companion.debug.xcconfig */,
+				B4C2CF4B294A9FBA20F25264 /* Pods-Fantasy-Companion.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		497B01845584F9CE2A92F11E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25302B2FD47809FAEFBE2668 /* Pods_Fantasy_Companion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC32903D231B01B200C33214 = {
 			isa = PBXGroup;
 			children = (
 				AC329048231B01B200C33214 /* Fantasy-Companion */,
 				AC329047231B01B200C33214 /* Products */,
+				31288E7C6565044544820BA1 /* Pods */,
+				497B01845584F9CE2A92F11E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC329058231B01B300C33214 /* Build configuration list for PBXNativeTarget "Fantasy-Companion" */;
 			buildPhases = (
+				4163E26599DE3AF29AC1DF9F /* [CP] Check Pods Manifest.lock */,
 				AC329042231B01B200C33214 /* Sources */,
 				AC329043231B01B200C33214 /* Frameworks */,
 				AC329044231B01B200C33214 /* Resources */,
+				1A6304A6BF804BC5918F5B76 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +192,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A6304A6BF804BC5918F5B76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Fantasy-Companion/Pods-Fantasy-Companion-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fantasy-Companion/Pods-Fantasy-Companion-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4163E26599DE3AF29AC1DF9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fantasy-Companion-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC329042231B01B200C33214 /* Sources */ = {
@@ -316,6 +383,7 @@
 		};
 		AC329059231B01B300C33214 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F3050DF9A1F3634DD43858A /* Pods-Fantasy-Companion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -334,6 +402,7 @@
 		};
 		AC32905A231B01B300C33214 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4C2CF4B294A9FBA20F25264 /* Pods-Fantasy-Companion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
