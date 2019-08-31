@@ -18,6 +18,9 @@
 		ACFE808F231B042E00D06375 /* StoryboardSceneBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE808E231B042E00D06375 /* StoryboardSceneBased.swift */; };
 		ACFE8091231B044D00D06375 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE8090231B044D00D06375 /* UICollectionView+Reusable.swift */; };
 		ACFE8094231B048200D06375 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE8093231B048200D06375 /* UITableView+Reusable.swift */; };
+		ACFE8098231B072F00D06375 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE8097231B072F00D06375 /* WebService.swift */; };
+		ACFE809A231B080E00D06375 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE8099231B080E00D06375 /* Endpoint.swift */; };
+		ACFE80A1231B122900D06375 /* DatabaseEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE80A0231B122900D06375 /* DatabaseEndpoint.swift */; };
 		C2D3B67E5DA82B5AE165A3C3 /* Pods_Fantasy_Companion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25302B2FD47809FAEFBE2668 /* Pods_Fantasy_Companion.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		ACFE808E231B042E00D06375 /* StoryboardSceneBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSceneBased.swift; sourceTree = "<group>"; };
 		ACFE8090231B044D00D06375 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		ACFE8093231B048200D06375 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		ACFE8097231B072F00D06375 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		ACFE8099231B080E00D06375 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		ACFE80A0231B122900D06375 /* DatabaseEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseEndpoint.swift; sourceTree = "<group>"; };
 		B4C2CF4B294A9FBA20F25264 /* Pods-Fantasy-Companion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fantasy-Companion.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fantasy-Companion/Pods-Fantasy-Companion.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +98,7 @@
 			children = (
 				ACFE8085231B038A00D06375 /* Extensions */,
 				AC32905B231B01C700C33214 /* Resources */,
+				ACFE8095231B06E200D06375 /* Services */,
 				AC32905F231B01ED00C33214 /* Storyboards */,
 			);
 			path = "Fantasy-Companion";
@@ -152,6 +159,32 @@
 				ACFE8093231B048200D06375 /* UITableView+Reusable.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACFE8095231B06E200D06375 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ACFE8096231B06FA00D06375 /* Webservice */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ACFE8096231B06FA00D06375 /* Webservice */ = {
+			isa = PBXGroup;
+			children = (
+				ACFE809B231B11F300D06375 /* Endpoints */,
+				ACFE8097231B072F00D06375 /* WebService.swift */,
+				ACFE8099231B080E00D06375 /* Endpoint.swift */,
+			);
+			path = Webservice;
+			sourceTree = "<group>";
+		};
+		ACFE809B231B11F300D06375 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				ACFE80A0231B122900D06375 /* DatabaseEndpoint.swift */,
+			);
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,13 +301,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFE8098231B072F00D06375 /* WebService.swift in Sources */,
 				ACFE808B231B03E600D06375 /* Reusable.swift in Sources */,
 				ACFE8089231B03C600D06375 /* NibFileOwnerLoadable.swift in Sources */,
 				AC32904A231B01B200C33214 /* AppDelegate.swift in Sources */,
+				ACFE809A231B080E00D06375 /* Endpoint.swift in Sources */,
 				ACFE808D231B041700D06375 /* StoryboardBased.swift in Sources */,
 				ACFE8094231B048200D06375 /* UITableView+Reusable.swift in Sources */,
 				ACFE8087231B039E00D06375 /* NibLoadable.swift in Sources */,
 				ACFE8091231B044D00D06375 /* UICollectionView+Reusable.swift in Sources */,
+				ACFE80A1231B122900D06375 /* DatabaseEndpoint.swift in Sources */,
 				ACFE808F231B042E00D06375 /* StoryboardSceneBased.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
