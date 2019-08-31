@@ -11,6 +11,13 @@
 		AC32904F231B01B200C33214 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC32904D231B01B200C33214 /* Main.storyboard */; };
 		AC329051231B01B300C33214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC329050231B01B300C33214 /* Assets.xcassets */; };
 		AC329054231B01B300C33214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC329052231B01B300C33214 /* LaunchScreen.storyboard */; };
+		ACFE8087231B039E00D06375 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE8086231B039E00D06375 /* NibLoadable.swift */; };
+		ACFE8089231B03C600D06375 /* NibFileOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE8088231B03C600D06375 /* NibFileOwnerLoadable.swift */; };
+		ACFE808B231B03E600D06375 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE808A231B03E600D06375 /* Reusable.swift */; };
+		ACFE808D231B041700D06375 /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE808C231B041700D06375 /* StoryboardBased.swift */; };
+		ACFE808F231B042E00D06375 /* StoryboardSceneBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE808E231B042E00D06375 /* StoryboardSceneBased.swift */; };
+		ACFE8091231B044D00D06375 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE8090231B044D00D06375 /* UICollectionView+Reusable.swift */; };
+		ACFE8094231B048200D06375 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE8093231B048200D06375 /* UITableView+Reusable.swift */; };
 		C2D3B67E5DA82B5AE165A3C3 /* Pods_Fantasy_Companion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25302B2FD47809FAEFBE2668 /* Pods_Fantasy_Companion.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +30,13 @@
 		AC329050231B01B300C33214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC329053231B01B300C33214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC329055231B01B300C33214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACFE8086231B039E00D06375 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		ACFE8088231B03C600D06375 /* NibFileOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibFileOwnerLoadable.swift; sourceTree = "<group>"; };
+		ACFE808A231B03E600D06375 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		ACFE808C231B041700D06375 /* StoryboardBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBased.swift; sourceTree = "<group>"; };
+		ACFE808E231B042E00D06375 /* StoryboardSceneBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSceneBased.swift; sourceTree = "<group>"; };
+		ACFE8090231B044D00D06375 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+		ACFE8093231B048200D06375 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		B4C2CF4B294A9FBA20F25264 /* Pods-Fantasy-Companion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fantasy-Companion.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fantasy-Companion/Pods-Fantasy-Companion.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +90,7 @@
 		AC329048231B01B200C33214 /* Fantasy-Companion */ = {
 			isa = PBXGroup;
 			children = (
+				ACFE8085231B038A00D06375 /* Extensions */,
 				AC32905B231B01C700C33214 /* Resources */,
 				AC32905F231B01ED00C33214 /* Storyboards */,
 			);
@@ -123,6 +138,20 @@
 				AC329052231B01B300C33214 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ACFE8085231B038A00D06375 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACFE8086231B039E00D06375 /* NibLoadable.swift */,
+				ACFE8088231B03C600D06375 /* NibFileOwnerLoadable.swift */,
+				ACFE808A231B03E600D06375 /* Reusable.swift */,
+				ACFE808C231B041700D06375 /* StoryboardBased.swift */,
+				ACFE808E231B042E00D06375 /* StoryboardSceneBased.swift */,
+				ACFE8090231B044D00D06375 /* UICollectionView+Reusable.swift */,
+				ACFE8093231B048200D06375 /* UITableView+Reusable.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +268,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFE808B231B03E600D06375 /* Reusable.swift in Sources */,
+				ACFE8089231B03C600D06375 /* NibFileOwnerLoadable.swift in Sources */,
 				AC32904A231B01B200C33214 /* AppDelegate.swift in Sources */,
+				ACFE808D231B041700D06375 /* StoryboardBased.swift in Sources */,
+				ACFE8094231B048200D06375 /* UITableView+Reusable.swift in Sources */,
+				ACFE8087231B039E00D06375 /* NibLoadable.swift in Sources */,
+				ACFE8091231B044D00D06375 /* UICollectionView+Reusable.swift in Sources */,
+				ACFE808F231B042E00D06375 /* StoryboardSceneBased.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
